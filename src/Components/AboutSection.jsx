@@ -1,7 +1,5 @@
 import { useSelector } from "react-redux"
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 
 const AboutSection = () => {
     const aboutSection = useSelector(state=>state.aboutSection)
@@ -16,7 +14,7 @@ const AboutSection = () => {
         autoplaySpeed: 3000,
       };
   return (
-    <div className="lg:each_section py-10 md:p-10 lg:px-0 lg:py-16 bg-cyberPurple h-fit">
+    <div id="aboutus" className="lg:each_section py-10 md:p-10 lg:px-0 lg:py-16 bg-cyberPurple h-fit">
         {aboutSection.map((item,index)=>{
             return(
                 <div key={index} className="contentmax_width h-fit my-auto flex items-center justify-between">

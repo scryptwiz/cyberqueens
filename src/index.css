@@ -20,3 +20,9 @@ code {
 .each_section {
   @apply w-full xl:h-fit lg:h-fit h-screen flex
 }
+.top_title {
+  @apply text-center font-medium text-4xl text-white
+}
+.slick-center div {
+  padding: 0;
+}

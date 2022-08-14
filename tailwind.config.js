@@ -6,7 +6,8 @@ module.exports = {
       colors:{
         cyberLightPurple: '#8D538D',
         cyberPurple: '#460972',
-        cyberWatermelon: '#FC6C85'
+        cyberWatermelon: '#FC6C85',
+        cyberDeepPurple: '#230223'
       }
     },
   },

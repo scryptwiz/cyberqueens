@@ -2,6 +2,9 @@ const defaultState = {
     heroSection: [],
     aboutSection: [],
     traitSection: [],
+    nftsSection: [],
+    roadmapSection: [],
+    ourTeamSection: [],
 }
 const pageReducer = (state=defaultState, action ) =>{
     if(action.type === "SET_HERO_SECTION"){
@@ -12,6 +15,15 @@ const pageReducer = (state=defaultState, action ) =>{
         return newState;
     } else if (action.type === "SET_TRAIT_SECTION") {
         let newState = {...state, traitSection:action.payload}
+        return newState;
+    } else if (action.type === "SET_NFT_SECTION") {
+        let newState = {...state, nftsSection:action.payload}
+        return newState;
+    } else if (action.type === "SET_ROADMAP_SECTION") {
+        let newState = {...state, roadmapSection:action.payload}
+        return newState;
+    } else if (action.type === "SET_OURTEAM_SECTION") {
+        let newState = {...state, ourTeamSection:action.payload}
         return newState;
     }
     return state
