@@ -5,6 +5,7 @@ const defaultState = {
     nftsSection: [],
     roadmapSection: [],
     ourTeamSection: [],
+    blogSection: [],
 }
 const pageReducer = (state=defaultState, action ) =>{
     if(action.type === "SET_HERO_SECTION"){
@@ -24,6 +25,9 @@ const pageReducer = (state=defaultState, action ) =>{
         return newState;
     } else if (action.type === "SET_OURTEAM_SECTION") {
         let newState = {...state, ourTeamSection:action.payload}
+        return newState;
+    } else if (action.type === "SET_BLOG_SECTION") {
+        let newState = {...state, blogSection:action.payload}
         return newState;
     }
     return state

@@ -7,7 +7,8 @@ module.exports = {
         cyberLightPurple: '#8D538D',
         cyberPurple: '#460972',
         cyberWatermelon: '#FC6C85',
-        cyberDeepPurple: '#230223'
+        cyberDeepPurple: '#230223',
+        cyberMelonPink: '#B94156'
       }
     },
   },

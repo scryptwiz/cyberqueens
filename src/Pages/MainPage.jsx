@@ -8,6 +8,7 @@ import TraitSection from '../Components/TraitSection'
 import Nfts from '../Components/Nfts'
 import Roadmap from '../Components/Roadmap'
 import OurTeams from '../Components/OurTeams'
+import BlogSection from '../Components/BlogSection'
 
 const MainPage = () => {
   const dispatch = useDispatch();
@@ -23,12 +24,14 @@ const MainPage = () => {
       const nftssection = await client.getEntries({ content_type: "nftsSection" })
       const roadmapsection = await client.getEntries({ content_type: "roadmapSection" })
       const ourTeamsection = await client.getEntries({ content_type: "ourTeam" })
+      const ourBlogSection = await client.getEntries({ content_type: "blog" })
       dispatch({type:"SET_HERO_SECTION", payload:herosection.items})
       dispatch({type:"SET_ABOUT_SECTION", payload:aboutsection.items})
       dispatch({type:"SET_TRAIT_SECTION", payload:traitsection.items})
       dispatch({type:"SET_NFT_SECTION", payload:nftssection.items})
       dispatch({type:"SET_ROADMAP_SECTION", payload:roadmapsection.items})
       dispatch({type:"SET_OURTEAM_SECTION", payload:ourTeamsection.items})
+      dispatch({type:"SET_BLOG_SECTION", payload:ourBlogSection.items})
     }
     getInfo()
   }, [dispatch])
@@ -41,6 +44,7 @@ const MainPage = () => {
         <Nfts/>
         <Roadmap/>
         <OurTeams/>
+        <BlogSection/>
     </div>
   )
 }
