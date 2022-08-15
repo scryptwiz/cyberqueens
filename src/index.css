@@ -23,6 +23,13 @@ code {
 .top_title {
   @apply text-center font-medium text-4xl text-white
 }
+.slider{
+  -webkit-transition: opacity 1000ms ease-in-out;
+    -moz-transition: opacity 1000ms ease-in-out;
+    -ms-transition: opacity 1000ms ease-in-out;
+    -o-transition: opacity 1000ms ease-in-out;
+     opacity: 1;
+}
 .slick-center div {
   padding: 0;
 }

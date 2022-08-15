@@ -9,12 +9,12 @@ const BlogSection = () => {
             <div className="flex flex-wrap justify-between gap-5 mt-7 w-full">
                 {blogs.map((item,index)=>{
                     return (
-                        <div key={index} className="rounded w-52 mx-auto">
+                        <a target="_blank" href={item.fields.link} key={index} className="rounded w-52 mx-auto">
                             <div className="w-52 h-52 bg-gray-300 rounded">
                                 <img src={item.fields.image.fields.file.url} alt={item.fields.image.fields.file.title} />
                             </div>
                             <h2 className="text-left font-medium text-xl text-white mt-2 break-words">{item.fields.title}</h2>
-                        </div>
+                        </a>
                     )
                 })}
             </div>

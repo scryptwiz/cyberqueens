@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 const HeroSection = () => {
     const heroSection = useSelector(state=>state.heroSection)
   return (
-    <div className="each_section py-10 md:p-10 lg:px-0 lg:py-20 bg-cyberLightPurple">
+    <div className="each_section py-10 md:p-10 lg:p-0 bg-cyberLightPurple">
         {heroSection.map((items,index)=>{
             return (
                 <div key={index} className="contentmax_width h-5/6 my-auto flex items-center justify-between">
