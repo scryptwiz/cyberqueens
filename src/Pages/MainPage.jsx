@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import HeroSection from '../Components/HeroSection'
 import Navbar from '../Components/Navbar'
 import { createClient } from 'contentful'
@@ -13,8 +13,10 @@ import Newsletter from '../Components/Newsletter'
 import FooterSection from '../Components/FooterSection'
 
 const MainPage = () => {
+  const [loader, setLoader] = useState(true)
   const dispatch = useDispatch();
   useEffect(() => {
+    setLoader(true)
     const getInfo = async () => {
       const client = createClient({
         space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
@@ -38,11 +40,18 @@ const MainPage = () => {
       dispatch({type:"SET_BLOG_SECTION", payload:ourBlogSection.items})
       dispatch({type:"SET_NEWS_SECTION", payload:newsLetterSection.items})
       dispatch({type:"SET_MEDIA_SECTION", payload:mediaSection.items})
+      setLoader(false)
     }
     getInfo()
   }, [dispatch])
   return (
     <div className='flex flex-col w-full'>
+        {!loader&&(
+          <div className='w-full h-screen fixed top-0 left-0 bg-white flex items-center justify-center z-[100] flex-col'>
+            <img src="/assets/loader.gif" alt="loader" className='w-fit h-fit' />
+            <h2 className='text-5xl font-medium animate-pulse'>Cyber Queens</h2>
+          </div>
+        )}
         <Navbar/>
         <HeroSection/>
         <AboutSection/>
