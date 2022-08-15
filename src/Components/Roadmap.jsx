@@ -8,8 +8,8 @@ const Roadmap = () => {
             return(
                 <div key={index} className="contentmax_width h-5/6 my-auto flex flex-col items-center justify-between px-10">
                     <h2 className="top_title">{item.fields.title}</h2>
-                    <div className="w-full h-fit mt-7">
-                        <img src={item.fields.image.fields.file.url} className='w-full h-fit' alt={item.fields.image.fields.fileName} />
+                    <div className="w-full max-h-screen h-fit mt-7">
+                        <img src={item.fields.image.fields.file.url} className='w-full' alt={item.fields.image.fields.fileName} />
                     </div>
                 </div>
             )
