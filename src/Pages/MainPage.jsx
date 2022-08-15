@@ -9,6 +9,8 @@ import Nfts from '../Components/Nfts'
 import Roadmap from '../Components/Roadmap'
 import OurTeams from '../Components/OurTeams'
 import BlogSection from '../Components/BlogSection'
+import Newsletter from '../Components/Newsletter'
+import FooterSection from '../Components/FooterSection'
 
 const MainPage = () => {
   const dispatch = useDispatch();
@@ -25,6 +27,8 @@ const MainPage = () => {
       const roadmapsection = await client.getEntries({ content_type: "roadmapSection" })
       const ourTeamsection = await client.getEntries({ content_type: "ourTeam" })
       const ourBlogSection = await client.getEntries({ content_type: "blog" })
+      const newsLetterSection= await client.getEntries({ content_type: "newsletter" })
+      const mediaSection= await client.getEntries({ content_type: "socialMedia" })
       dispatch({type:"SET_HERO_SECTION", payload:herosection.items})
       dispatch({type:"SET_ABOUT_SECTION", payload:aboutsection.items})
       dispatch({type:"SET_TRAIT_SECTION", payload:traitsection.items})
@@ -32,6 +36,8 @@ const MainPage = () => {
       dispatch({type:"SET_ROADMAP_SECTION", payload:roadmapsection.items})
       dispatch({type:"SET_OURTEAM_SECTION", payload:ourTeamsection.items})
       dispatch({type:"SET_BLOG_SECTION", payload:ourBlogSection.items})
+      dispatch({type:"SET_NEWS_SECTION", payload:newsLetterSection.items})
+      dispatch({type:"SET_MEDIA_SECTION", payload:mediaSection.items})
     }
     getInfo()
   }, [dispatch])
@@ -45,6 +51,8 @@ const MainPage = () => {
         <Roadmap/>
         <OurTeams/>
         <BlogSection/>
+        <Newsletter/>
+        <FooterSection/>
     </div>
   )
 }

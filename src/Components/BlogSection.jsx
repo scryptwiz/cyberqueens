@@ -2,12 +2,11 @@ import { useSelector } from "react-redux"
 
 const BlogSection = () => {
     const blogs = useSelector(state=>state.blogSection)
-    console.log(blogs)
   return (
-    <div className="lg:each_section py-10 md:p-10 lg:px-0 lg:py-16 bg-cyberMelonPink h-fit">
+    <div id="blog" className="lg:each_section py-10 md:p-10 lg:px-0 lg:py-16 bg-cyberMelonPink h-fit">
         <div className="contentmax_width h-fit my-auto flex-col flex items-center justify-between">
             <h2 className="top_title">Whats New With CQ?</h2>
-            <div className="flex flex-wrap justify-between gap-5 mt-7">
+            <div className="flex flex-wrap justify-between gap-5 mt-7 w-full">
                 {blogs.map((item,index)=>{
                     return (
                         <div key={index} className="rounded w-52 mx-auto">
