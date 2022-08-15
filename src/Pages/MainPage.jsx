@@ -46,7 +46,7 @@ const MainPage = () => {
   }, [dispatch])
   return (
     <div className='flex flex-col w-full'>
-        {!loader&&(
+        {loader&&(
           <div className='w-full h-screen fixed top-0 left-0 bg-white flex items-center justify-center z-[100] flex-col'>
             <img src="/assets/loader.gif" alt="loader" className='w-fit h-fit' />
             <h2 className='text-5xl font-medium animate-pulse'>Cyber Queens</h2>
