@@ -9,7 +9,7 @@ const BlogSection = () => {
             <div className="flex flex-wrap justify-between gap-5 mt-7 w-full">
                 {blogs.map((item,index)=>{
                     return (
-                        <a target="_blank" href={item.fields.link} rel="noreferrer" key={index} className="rounded w-52 mx-auto">
+                        <a target="_blank" href={item.fields.link} rel="noreferrer" key={index} className="rounded w-52 mx-auto hover:scale-110 duration-75">
                             <div className="w-52 h-52 bg-gray-300 rounded">
                                 <img src={item.fields.image.fields.file.url} alt={item.fields.image.fields.file.title} />
                             </div>

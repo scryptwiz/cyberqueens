@@ -7,9 +7,10 @@ const AboutSection = () => {
         arrows: false,
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplaySpeed: 0,
+        speed: 100,
         autoplay: true,
         fade: true,
       };

@@ -23,13 +23,19 @@ code {
 .top_title {
   @apply text-center font-medium text-4xl text-white
 }
-.slider{
+.trait {
+  background: linear-gradient(rgba(141, 83, 141,0.96), rgba(141, 83, 141,0.96)), url('/public/assets/dna1.png');
+  background-position: center;
+  background-size: 115%;
+  background-repeat: no-repeat;
+}
+/* .slider{
   -webkit-transition: opacity 1000ms ease-in-out;
     -moz-transition: opacity 1000ms ease-in-out;
     -ms-transition: opacity 1000ms ease-in-out;
     -o-transition: opacity 1000ms ease-in-out;
      opacity: 1;
-}
+} */
 .slick-center div {
   padding: 0;
 }
