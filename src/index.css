@@ -18,7 +18,7 @@ code {
   @apply lg:max-w-6xl mx-auto w-full
 }
 .each_section {
-  @apply w-full xl:h-fit lg:h-fit h-fit flex
+  @apply w-full xl:h-fit lg:h-fit h-96 flex
 }
 .top_title {
   @apply text-center font-medium text-4xl text-white
