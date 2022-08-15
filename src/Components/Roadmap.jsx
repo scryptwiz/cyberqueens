@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 const Roadmap = () => {
     const roadmapSection = useSelector(state=>state.roadmapSection)
   return (
-    <div id="roadmap" className="lg:each_section py-10 md:p-10 lg:px-0 lg:py-16 bg-cyberLightPurple h-fit">
+    <div id="roadmap" className="lg:each_section py-10 md:p-10 lg:px-0 lg:py-16 bg-cyberLightPurple/90 h-fit">
         {roadmapSection.map((item,index)=>{
             return(
                 <div key={index} className="contentmax_width h-5/6 my-auto flex flex-col items-center justify-between px-10">
