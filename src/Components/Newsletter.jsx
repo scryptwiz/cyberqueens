@@ -14,8 +14,8 @@ const Newsletter = () => {
                         <h1 className='text-3xl md:text-5xl text-cyberPurple'>{item.fields.title}</h1>
                         <p className='text-white text-xm text-left'>{item.fields.subContent}</p>
                         <div className='flex items-center'>
-                            <input type="text" className='px-3 text-sm font-light w-9/12 py-1.5 rounded-l-lg bg-white border-none outline-none' placeholder='Email Address...' />
-                            <button className='text-white px-3 py-1.5 rounded-r-lg text-sm bg-cyberMelonPink'>Subscribe</button>
+                            <input type="text" className='md:px-4 px-3 text-sm font-light w-9/12 py-2 rounded-l-md bg-white border-none outline-none' placeholder='Email Address...' />
+                            <button className='text-white px-3 py-2 rounded-r-md text-sm bg-cyberMelonPink'>Subscribe</button>
                         </div>
                     </div>
                 </div>
