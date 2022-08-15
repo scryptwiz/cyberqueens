@@ -8,6 +8,7 @@ const defaultState = {
     blogSection: [],
     newsLetterSection: [],
     socialMedia: [],
+    bgImage:''
 }
 const pageReducer = (state=defaultState, action ) =>{
     if(action.type === "SET_HERO_SECTION"){
@@ -36,6 +37,9 @@ const pageReducer = (state=defaultState, action ) =>{
         return newState;
     } else if (action.type === "SET_MEDIA_SECTION") {
         let newState = {...state, socialMedia:action.payload}
+        return newState;
+    } else if (action.type === "SET_BGIMAGE") {
+        let newState = {...state, bgImage:action.payload}
         return newState;
     }
     return state
