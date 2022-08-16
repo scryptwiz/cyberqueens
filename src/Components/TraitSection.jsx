@@ -4,7 +4,7 @@ const TraitSection = () => {
     const traitSection = useSelector(state=>state.traitSection)
   return (
     <div className="lg:each_section py-10 md:p-10 lg:px-0 lg:py-16 trait relative bg-cyberLightPurple h-fit">
-        <video src="/assets/dna.mp4" autoPlay loop muted playsInline type="video/mp4" className="absolute left-0 top-0 h-full lg:h-auto lg:w-full object-cover w-auto vid_dna"></video>
+        <video src="/assets/dna.mp4" autoPlay loop muted playsinline preload type="video/mp4" className="absolute left-0 top-0 h-full lg:h-auto lg:w-full object-cover w-auto vid_dna"></video>
         <div className="contentmax_width h-5/6 my-auto flex flex-col items-center justify-between px-10">
             <h2 className="top_title">Traits</h2>
             <div className="w-10/12 flex md:flex-row items-center flex-col mt-10 gap-7 bg-black/70 py-5">
