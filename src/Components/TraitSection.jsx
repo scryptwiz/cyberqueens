@@ -7,7 +7,7 @@ const TraitSection = () => {
         <video autoPlay loop muted playsinline preload className="absolute left-0 top-0 h-full lg:h-auto lg:w-full object-cover w-auto vid_dna">
             <source src="/assets/dna.mp4" type="video/mp4"/>
         </video>
-        <div className="contentmax_width h-5/6 my-auto flex flex-col items-center justhttps://stackoverflow.com/questions/64968386/autoplay-video-html-on-safari-ios-14-2ify-between px-10">
+        <div className="contentmax_width h-5/6 my-auto flex flex-col items-center justify-between px-10">
             <h2 className="top_title">Traits</h2>
             <div className="w-10/12 flex md:flex-row items-center flex-col mt-10 gap-7 bg-black/70 py-5">
                 <div className="w-full rounded-lg text-sm p-5 flex gap-5 justify-around flex-wrap">
