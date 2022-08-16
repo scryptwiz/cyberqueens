@@ -24,10 +24,13 @@ code {
   @apply text-center font-medium text-4xl text-white
 }
 .trait {
-  background: linear-gradient(rgba(141, 83, 141,0.96), rgba(141, 83, 141,0.96)), url('/public/assets/dna1.png');
+  background: linear-gradient(rgba(141, 83, 141,0.5), rgba(141, 83, 141,0.5));
   background-position: center;
   background-size: 115%;
   background-repeat: no-repeat;
+}
+.vid_dna {
+  z-index: -1;
 }
 .heroImg {
   background-size: 120%;

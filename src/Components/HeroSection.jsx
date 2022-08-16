@@ -13,8 +13,6 @@ const HeroSection = () => {
             )
         })
     }, [dispatch, heroSection])
-    console.log(bgImage)
-    
   return (
     <div className="each_section py-10 md:p-10 lg:p-0 bg-cyberLightPurple">
         {heroSection.map((items,index)=>{
